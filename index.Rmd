@@ -1,6 +1,6 @@
 --- 
 title: "Life Contingencies: The Mathematics, Statistics, and Economics of Life Insurance"
-author: "An open text authored by the Actuarial Community"
+author: "A version for Act Sci 650"
 site: bookdown::bookdown_site
 output:
   bookdown::gitbook
