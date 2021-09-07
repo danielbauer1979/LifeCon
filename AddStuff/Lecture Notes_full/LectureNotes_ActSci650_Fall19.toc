@@ -1,0 +1,28 @@
+\babel@toc {english}{}
+\contentsline {chapter}{Contents}{1}
+\contentsline {chapter}{\numberline {1}Syllabus}{1}
+\contentsline {chapter}{\numberline {2}Introduction}{5}
+\contentsline {section}{\numberline {2.1}Example: The Grumpy Old Actuary}{5}
+\contentsline {section}{\numberline {2.2}Review of Basic Concepts From Probability}{7}
+\contentsline {chapter}{\numberline {3}Survival Distributions and Life Tables}{8}
+\contentsline {section}{\numberline {3.1}Basic quantities}{8}
+\contentsline {section}{\numberline {3.2}Curtate Lifetime and Force of Mortality}{12}
+\contentsline {section}{\numberline {3.3}Life Tables}{15}
+\contentsline {section}{\numberline {3.4}Fractional Ages}{25}
+\contentsline {section}{\numberline {3.5}Analytic Mortality Laws}{32}
+\contentsline {section}{\numberline {3.6}Select and Ultimate Tables}{35}
+\contentsline {chapter}{\numberline {4}Life Insurance}{38}
+\contentsline {section}{\numberline {4.1}Insurances Payable at the Moment of Death}{40}
+\contentsline {section}{\numberline {4.2}Insurances Payable at the End of the Year of Death}{45}
+\contentsline {section}{\numberline {4.3}Varying Benefit Insurance}{61}
+\contentsline {chapter}{\numberline {5}Life Annuities}{66}
+\contentsline {section}{\numberline {5.1}Continuous Life Annuities}{66}
+\contentsline {section}{\numberline {5.2}Discrete Life Annuities}{77}
+\contentsline {section}{\numberline {5.3}Life Annuities with $m$-thly Payments}{82}
+\contentsline {chapter}{\numberline {6}Benefit Premiums}{88}
+\contentsline {section}{\numberline {6.1}Premiums by the Equivalence Principle}{88}
+\contentsline {section}{\numberline {6.2}Percentile Premiums}{98}
+\contentsline {chapter}{Bibliography}{101}
+\contentsline {chapter}{Quiz}{102}
+\contentsline {chapter}{Practice Questions}{3}
+\contentsline {chapter}{Exam}{3}
