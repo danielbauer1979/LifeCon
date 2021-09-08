@@ -21,9 +21,8 @@ fig:KaplanMeierPlotsa
 fig:NelsonAalenPlotsa
 fig:CoxPHPlotsa
 fig:NewlyUnderwrittenLifeQxa
-fig:IndonesianLifeTablePlot
 fig:Halo1a
-introduction
+motivating-example
 modeling-lifetimes
 S:MortData
 S:DataLifeExp
@@ -51,7 +50,6 @@ the-cox-proportional-hazard-model
 cox-models-based-on-life-insurer-data
 conditional-life-tables
 notes-and-comments
-Sec:LifeTableRecursive
 C:NotationConventionLC
 S:NC:ActSymbols
 life-table-symbols

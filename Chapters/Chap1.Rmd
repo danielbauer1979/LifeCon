@@ -1,0 +1,65 @@
+# Motivating Example
+
+Mr. (55) is an actuary -- a grumpy old actuary: He dislikes all his heirs, so when he dies he "will consider" his remaining savings wasted. He just celebrated his 55th birthday and decides to invest $S_0= \$100,000$ to secure his future financial situation; he picks his 70th birthday as the pay-out year. Since he has taken all actuarial exams, he knows how to calculate his expected payoff. 
+
+His first thought is to put all his money in a savings account, where he earns an annual interest rate of $i=2.5\%$. Thus, after 15 years he would have
+$$
+S_{15} = S_0 \,\left(1+i\right)^{15} = \$100,000 \cdot 1.025^{15} = \$144,829.80.
+$$
+The probability to survive until the age of 70 when being 55 now is approximatively $0.75$, so the *expected* amount at his disposal is
+\begin{eqnarray*}
+p_{\text{alive}} \,S_{15} + p_{\text{dead}} \, 0 &=& p_{\text{alive}} \, S_{15} + (1- p_{\text{alive}}) \, 0\\
+&=& 0.75 \cdot \$144,829.80 + 0.25 \cdot 0\\
+&=& \$108,622.40.
+\end{eqnarray*}
+
+On his way to the bank he meets his colleagues $(55)^*$ and $(55)^{**}$ who are in the same situation as him. While sitting together for a coffee, they come up with the following idea: ``How about putting all our savings of $3S_0 = \$300,000$ in a shared account and those who survive share the accumulated capital $3S_{15} = \$434,489.40$ equally." (55) excuses himself and runs to his car, where he has a calculator, to decide whether this scheme would be beneficial for him. The expected amount at his disposal is now
+\begin{eqnarray*}
+&& p_{\text{(55) is alive}} \,\text{pay-out} + p_{\text{(55) is dead}} \, 0 \\
+&=&  p_{\text{(55) is alive}} \left(p_{\text{$(55)^*$ and $(55)^{**}$ died}} \, \frac{3S_{15}}{1} +
+p_{\text{$(55)^*$ died but $(55)^{**}$ is alive}} \, \frac{3S_{15}}{2} \right.\\
+&\;& \left. + p_{\text{$(55)^{**}$ died but $(55)^*$ is alive}} \,\frac{3S_{15}}{2} 
++ p_{\text{both, $(55)^*$ and $(55)^{**}$, are alive}}\, \frac{3S_{15}}{3} \right) 
+\end{eqnarray*}
+\begin{eqnarray*}
+&=& 0.75 \left( (1-0.75)(1-0.75) \frac{3S_{15}}{1} + (1-0.75) \,0.75 \, \frac{3S_{15}}{2} \right. \\
+&\;& \left. + 0.75 \, (1-0.75) \, \frac{3S_{15}}{2} + 0.75\, 0.75\,  \frac{3S_{15}}{3}   \right)\\
+&=& 0.984375 \, S_{15} = \$142,566.90.
+\end{eqnarray*}
+
+But instead of returning to his colleagues, he wonders now how good he could do if he finds 4, 5 or even more persons to join the scheme. Say he finds $l_{55}$ people who are in the same situation as him and of which $l_{70}$ until the age of 70. The expected amount at his disposal will then be
+$$
+p_{\text{(55) is alive}} \, \frac{l_{55} S_{15}}{l_{70}} + p_{\text{(55) is dead}}\,  0 = S_{15} \, 0.75 \, \frac{l_{55}}{l_{70}} 
+$$
+and by the strong law of large numbers we have 
+\begin{eqnarray*}
+\frac{l_{70}}{l_{55}} = \frac{1}{l_{55}} \sum_{k=1}^{l_{55}} \underbrace{1_{\left\{\text{Person k is alive}\right\}}}_{\text{iid Bernoulli random variables}} &\rightarrow& E\left[1_{\left\{\text{Person k is alive}\right\}}\right]
+\\
+&& = Pr(\text{Person 1 is alive}) = 0.75.
+\end{eqnarray*}
+Therefore,
+$$
+S_{15} \, 0.75\,  \frac{l_{55}}{l_{70}} \rightarrow S_{15} \, 0.75 \, \frac{1}{0.75} = S_{15},
+$$
+and hence the expected discounted amount at his disposal is 
+$$
+\frac{S_{15}}{(1+i)^{15}} = S_0 = \$100,000.
+$$
+That is insurance, and clearly (55) should have known that.
+
+This type of contract is called \textit{pure endowment}, and a combination of several endowment contracts is called \textit{life annuity}. In contrast, contracts that pay upon death if the insured has heirs he wants to secure are called \textit{life insurance} contacts.
+
+In the example, $S_0$ is
+* the amount the insured pays initially, i.e.\ the (single upfront) \textit{premium};
+* the expected discounted amount at the insured's disposal.
+We will see that this is not a coincidence. However, note that this in general not the present value of the pay-out. In fact, in our example (55) either gets
+$$
+\frac{S_{15}}{0.75} = \$ 193,106.4 > S_{15}
+$$
+with a present value of 
+$$
+\frac{\$ 258,037.65}{(1+i)^{15}} = \$ 258,037.65 \, v^{15} = \$ 133,333.33 > S_0
+$$
+or nothing if he dies, i.e.\ the situation is not the same as in interest rate theory as we have non-deterministic payments (random variables). 
+
+This basic example communicates a good bit of the intuition behind this class: (Life) insurance is all about sharing risk. Doing the actuarial calculations requires information/models for future lifetimes, here the probability for (55) to survive. Chapter 2 will cover this in-depth. Afterwards, Chapters 3, 4, and 5 will use this information to analyze a variety of life-contingent payoffs.
